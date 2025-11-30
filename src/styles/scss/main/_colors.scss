@@ -12,7 +12,8 @@ $colorsMap: (
   slate-300: 203 41% 72%,
   slate-500: 200 26% 54%,
   slate-700: 200 24% 40%,
-  slate-900: 202 55% 16%
+  slate-900: 202 55% 16%,
+  slate-950: 202 55% 13%
 );
 
 $primary-color: map.get($colorsMap, white);

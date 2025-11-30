@@ -8,7 +8,7 @@ export const InputWithDetails = ({
     <label className="grid relative gap-2">
       {label}
       <input
-        className="border p-4 rounded-lg"
+        className={`border p-4 rounded-lg ${toRight ? "pr-20" : "pl-12"}`}
         type={"number"}
         name={name}
         placeholder=""

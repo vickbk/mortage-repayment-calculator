@@ -5,7 +5,7 @@ import { EmptyResults } from "./EmptyResults";
 
 export const Results = ({ results }: { results?: ResultsType }) => {
   return (
-    <Article>
+    <Article className="slate-900 c-white grid justify-items-center gap-8 p-8">
       {!results ? <EmptyResults /> : <CalculatedResults {...results} />}
     </Article>
   );
