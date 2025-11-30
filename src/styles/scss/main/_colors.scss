@@ -4,16 +4,15 @@
 
 $colorsMap: (
   // Primary
-  red: 13 86% 42%,
-  green: 159 69% 38%,
+  red: 4 69% 50%,
+  lime: 61 70% 52%,
   // Neutral
-  rose-20: 0 0% 100%,
-  rose-50: 20 50% 98%,
-  rose-100: 13 31% 94%,
-  rose-300: 14 25% 72%,
-  rose-400: 7 20% 60%,
-  rose-500: 12 20% 44%,
-  rose-900: 14 65% 9%
+  white: 0 0% 100%,
+  slate-100: 202 86% 94%,
+  slate-300: 203 41% 72%,
+  slate-500: 200 26% 54%,
+  slate-700: 200 24% 40%,
+  slate-900: 202 55% 16%
 );
 
 $primary-color: map.get($colorsMap, rose-50);
