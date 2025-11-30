@@ -15,10 +15,10 @@ $colorsMap: (
   slate-900: 202 55% 16%
 );
 
-$primary-color: map.get($colorsMap, rose-50);
-$link-color: map.get($colorsMap, red);
-$text-color: map.get($colorsMap, rose-900);
-$accent-color: map.get($colorsMap, red);
+$primary-color: map.get($colorsMap, white);
+$link-color: map.get($colorsMap, lime);
+$text-color: map.get($colorsMap, slate-900);
+$accent-color: map.get($colorsMap, lime);
 
 :root {
   --background: #{$primary-color};
