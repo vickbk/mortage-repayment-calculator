@@ -1,9 +1,13 @@
-export const InputWithDetails = () => {
+export const InputWithDetails = ({
+  label,
+  name,
+  detail,
+}: Record<"label" | "name" | "detail", string>) => {
   return (
     <label>
-      Mortage Amount
-      <input type="text" name="amount" placeholder="" />
-      <span>%</span>
+      {label}
+      <input type={"number"} name={name} placeholder="" />
+      <span>{detail}</span>
     </label>
   );
 };

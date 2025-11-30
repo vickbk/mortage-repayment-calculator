@@ -1,12 +1,12 @@
+import { Article } from "../shared/Article";
 import { CalculatorForm } from "./calculator/CalculatorForm";
 import { Results } from "./results/Results";
 
 export const MortageCalculator = () => {
   return (
-    <div>
-      MortageCalculator
+    <Article>
       <CalculatorForm />
       <Results />
-    </div>
+    </Article>
   );
 };
