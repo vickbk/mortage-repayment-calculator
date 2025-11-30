@@ -2,12 +2,24 @@ export const InputWithDetails = ({
   label,
   name,
   detail,
-}: Record<"label" | "name" | "detail", string>) => {
+  toRight = false,
+}: Record<"label" | "name" | "detail", string> & { toRight?: boolean }) => {
   return (
-    <label>
+    <label className="grid relative gap-2">
       {label}
-      <input type={"number"} name={name} placeholder="" />
-      <span>{detail}</span>
+      <input
+        className="border p-4 rounded-lg"
+        type={"number"}
+        name={name}
+        placeholder=""
+      />
+      <span
+        className={`absolute -z-10 bottom-0 font-bold slate-100 p-4 ${
+          toRight ? "right-0" : "left-0"
+        }`}
+      >
+        {detail}
+      </span>
     </label>
   );
 };
