@@ -2,9 +2,13 @@ import { Heading } from "../../shared/Heading";
 import { InputWithDetails } from "./InputWithDetails";
 import { MortageType } from "./MortageType";
 
-export const CalculatorForm = () => {
+export const CalculatorForm = ({
+  calculateAction,
+}: {
+  calculateAction: (data: FormData) => void;
+}) => {
   return (
-    <form>
+    <form action={calculateAction}>
       <Heading>Mortage Calculator</Heading>
       <button type="reset">Clear All</button>
       <InputWithDetails label="Mortage Amount" name="amount" detail="#" />

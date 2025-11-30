@@ -1,9 +1,14 @@
+import type { ResultsType } from "../../../libs/results";
 import { Article } from "../../shared/Article";
 import { Heading } from "../../shared/Heading";
 
-export const CalculatedResults = () => {
+export const CalculatedResults = ({
+  monthly,
+  term,
+  isInterest,
+}: ResultsType) => {
   return (
-    <Article>
+    <>
       <Heading>Your results</Heading>
       <p>
         Your results are shown below based on the information you provided. To
@@ -11,13 +16,13 @@ export const CalculatedResults = () => {
         again.
       </p>
       <Article>
-        <Heading>Your monthly repayments</Heading>
-        <p>$1,787.32</p>
+        <Heading>Your monthly {isInterest ? "interest" : "repayments"}</Heading>
+        <p>${monthly.toFixed(2)}</p>
       </Article>
       <Article>
         <Heading>Total you will repay over the term</Heading>
-        <p>$323,434.94</p>
+        <p>${term.toFixed(2)}</p>
       </Article>
-    </Article>
+    </>
   );
 };
