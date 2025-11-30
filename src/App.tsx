@@ -1,9 +1,9 @@
 import "./styles/scss/styles.scss";
 import "./styles/global.css";
-import { ColorsHelper } from "./components/shared/ColorsHelper";
+import { FullPage } from "./components/FullPage";
 
 function App() {
-  return <ColorsHelper />;
+  return <FullPage />;
 }
 
 export default App;
