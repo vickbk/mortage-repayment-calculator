@@ -29,14 +29,14 @@
   } */
 
   /* Fonts */
-  --ff-red-hat: "Red Hat Text", sans-serif;
+  --ff-plus-jakarta: "Plus Jakarta Sans", sans-serif;
 }
 
 @theme inline {
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
-  --font-sans: var(--ff-red-hat);
-  --font-mono: var(--ff-red-hat);
+  --font-sans: var(--ff-plus-jakarta);
+  --font-mono: var(--ff-plus-jakarta);
 }
 
 /* Styles for users who prefer reduced motion */
