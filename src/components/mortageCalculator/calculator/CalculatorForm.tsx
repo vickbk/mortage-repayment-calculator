@@ -1,4 +1,5 @@
 import { Heading } from "../../shared/Heading";
+import { AmountInput } from "./AmountInput";
 import { InputWithDetails } from "./InputWithDetails";
 import { MortageType } from "./MortageType";
 
@@ -16,7 +17,7 @@ export const CalculatorForm = ({
       >
         Clear All
       </button>
-      <InputWithDetails label="Mortage Amount" name="amount" detail="£" />
+      <AmountInput />
       <div className="grid gap-4">
         <InputWithDetails
           label="Mortage Term"
@@ -37,7 +38,7 @@ export const CalculatorForm = ({
         <MortageType value="interest" text="Interest Only" />
       </div>
       <button
-        className="flex justify-center gap-4 p-4 rounded-x-full font-bold lime transition-transform duration-300 active:scale-95 hover:scale-105 focus:scale-105 focus:outline-0"
+        className="flex justify-center gap-4 p-4 rounded-x-full font-bold lime transition-transform duration-300 active:scale-95 border-2 b-white out-lime  hover:outline-2 focus:scale-105 focus:outline-0"
         type="submit"
       >
         <img src="./assets/images/icon-calculator.svg" alt="" />
