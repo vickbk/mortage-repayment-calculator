@@ -6,9 +6,11 @@ export const InputWithDetails = ({
   detail,
   toRight = false,
   children,
+  step = 1,
 }: Record<"label" | "name" | "detail", string> & {
   toRight?: boolean;
   children?: ReactNode;
+  step?: 0.1 | 0.01 | 1;
 }) => {
   return (
     <label className="detailed grid relative gap-2">
@@ -22,6 +24,7 @@ export const InputWithDetails = ({
           name={name}
           placeholder=""
           required
+          step={step}
         />
       )}
       <span
