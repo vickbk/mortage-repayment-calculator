@@ -16,7 +16,7 @@ export const CalculatorForm = ({
       >
         Clear All
       </button>
-      <InputWithDetails label="Mortage Amount" name="amount" detail="#" />
+      <InputWithDetails label="Mortage Amount" name="amount" detail="£" />
       <div className="grid gap-4">
         <InputWithDetails
           label="Mortage Term"
@@ -37,7 +37,7 @@ export const CalculatorForm = ({
         <MortageType value="interest" text="Interest Only" />
       </div>
       <button
-        className="flex justify-center gap-4 p-4 rounded-x-full font-bold lime"
+        className="flex justify-center gap-4 p-4 rounded-x-full font-bold lime transition-transform duration-300 active:scale-95 hover:scale-105 focus:scale-105 focus:outline-0"
         type="submit"
       >
         <img src="./assets/images/icon-calculator.svg" alt="" />

@@ -73,6 +73,13 @@ input[type="number"] {
   appearance: textfield;
 }
 
+input {
+  &[type="radio"],
+  &[type="checkbox"] {
+    accent-color: hsl(var(--accent-color));
+  }
+}
+
 dialog {
   &::backdrop {
     background-color: hsl(var(--background) / 0.8);
