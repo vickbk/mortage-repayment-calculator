@@ -24,7 +24,9 @@ export const CalculatorForm = ({
       onReset={resetForm}
     >
       <div className="flex flex-wrap gap-4 justify-between items-center">
-        <Heading className="text-4xl font-bold">Mortage Calculator</Heading>
+        <Heading className="text-2xl sm:text-4xl font-bold">
+          Mortage Calculator
+        </Heading>
         <button className=" underline decoration-dotted" type="reset">
           Clear All
         </button>
@@ -63,7 +65,6 @@ export const CalculatorForm = ({
       <button
         className="flex justify-center gap-4 p-4 rounded-x-full font-bold lime transition-transform duration-300 active:scale-95 border-2 b-white out-lime  hover:outline-2 focus:scale-105 focus:outline-0 md:place-self-start md:px-12"
         type="submit"
-        style={{ "--bg-accent": 0.7 } as React.CSSProperties}
       >
         <img src="./assets/images/icon-calculator.svg" alt="" />
         Calculate Repayments
