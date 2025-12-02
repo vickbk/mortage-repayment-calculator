@@ -22,7 +22,7 @@
       outline: none;
     }
   }
-  &:has(&__input:hover, &__input:active, &__input:focus) {
+  &:has(&__input:hover, &__input:active, &__input:focus, &__input:checked) {
     background-color: hsl(var(--lime) / 0.1);
     border-color: hsl(var(--lime) / 0.6);
     outline: f.to-r-em(1) solid hsl(var(--lime) / 0.6);

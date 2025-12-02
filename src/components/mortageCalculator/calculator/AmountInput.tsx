@@ -23,7 +23,7 @@ export const AmountInput = () => {
   return (
     <InputWithDetails label="Mortage Amount" name="amount" detail="£">
       <input
-        className={`border detailed__input p-4 rounded-lg ${"pl-12"}`}
+        className={`border detailed__input p-4 rounded-lg pl-12 focus:outline`}
         type="text"
         name={"amount"}
         placeholder=""

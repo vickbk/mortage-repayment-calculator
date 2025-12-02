@@ -17,7 +17,7 @@ export const InputWithDetails = ({
       {label}
       {children || (
         <input
-          className={`border detailed__input p-4 rounded-lg ${
+          className={`border detailed__input p-4 rounded-lg focus:outline ${
             toRight ? "pr-20" : "pl-12"
           }`}
           type={"number"}

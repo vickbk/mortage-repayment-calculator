@@ -5,7 +5,8 @@
 $colorsMap: (
   // Primary
   red: 4 69% 50%,
-  lime: 62 65% 39%,
+  lime: 61 70% 52%,
+  lime-accent: 62 65% 35%,
   // Neutral
   white: 0 0% 100%,
   slate-100: 202 86% 94%,
@@ -19,7 +20,7 @@ $colorsMap: (
 $primary-color: map.get($colorsMap, slate-100);
 $link-color: map.get($colorsMap, lime);
 $text-color: map.get($colorsMap, slate-900);
-$accent-color: map.get($colorsMap, lime);
+$accent-color: map.get($colorsMap, lime-accent);
 
 :root {
   --background: #{$primary-color};
