@@ -13,3 +13,11 @@ export const currencyFormatter = ({
   });
   return formatter.format(amount);
 };
+
+export const currencyToNumber = ({
+  amount,
+  decimalSymbol = ".",
+}: {
+  amount: string;
+  decimalSymbol?: "." | ",";
+}) => +amount.replace(new RegExp("[^\\d" + decimalSymbol + "]", "g"), "");
