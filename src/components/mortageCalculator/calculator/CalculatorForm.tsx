@@ -24,7 +24,9 @@ export const CalculatorForm = ({
       onReset={resetForm}
     >
       <div className="flex flex-wrap gap-4 justify-between items-center">
-        <Heading className="text-4xl font-bold">Mortage Calculator</Heading>
+        <Heading className="text-2xl sm:text-4xl font-bold">
+          Mortage Calculator
+        </Heading>
         <button className=" underline decoration-dotted" type="reset">
           Clear All
         </button>
