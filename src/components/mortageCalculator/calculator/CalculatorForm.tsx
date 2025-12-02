@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Heading } from "../../shared/Heading";
 import { AmountInput } from "./AmountInput";
 import { InputWithDetails } from "./InputWithDetails";
@@ -8,15 +9,21 @@ export const CalculatorForm = ({
 }: {
   calculateAction: (data: FormData) => void;
 }) => {
+  const [amount, setAmount] = useState("");
+  const resetForm = () => setAmount("");
   return (
-    <form className="p-8 grid gap-8" action={calculateAction}>
+    <form
+      className="p-8 grid gap-8"
+      action={calculateAction}
+      onReset={resetForm}
+    >
       <div className="flex flex-wrap gap-4 justify-between items-center">
         <Heading className="text-4xl font-bold">Mortage Calculator</Heading>
         <button className=" underline decoration-dotted" type="reset">
           Clear All
         </button>
       </div>
-      <AmountInput />
+      <AmountInput amount={amount} setAmount={setAmount} />
       <div className="grid gap-4">
         <InputWithDetails
           label="Mortage Term"

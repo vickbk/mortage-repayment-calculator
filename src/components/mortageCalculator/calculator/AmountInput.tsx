@@ -1,9 +1,13 @@
-import { useState } from "react";
 import { InputWithDetails } from "./InputWithDetails";
 import { currencyFormatter } from "../../../libs/currencyFormatter";
 
-export const AmountInput = () => {
-  const [amount, setAmount] = useState("");
+export const AmountInput = ({
+  amount,
+  setAmount,
+}: {
+  amount: string;
+  setAmount: (amount: string) => void;
+}) => {
   const beautifyAmount = ({
     target: { value },
   }: React.ChangeEvent<HTMLInputElement>) => {
