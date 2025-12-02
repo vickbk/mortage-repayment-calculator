@@ -16,7 +16,7 @@ $colorsMap: (
   slate-950: 202 55% 13%
 );
 
-$primary-color: map.get($colorsMap, white);
+$primary-color: map.get($colorsMap, slate-100);
 $link-color: map.get($colorsMap, lime);
 $text-color: map.get($colorsMap, slate-900);
 $accent-color: map.get($colorsMap, lime);

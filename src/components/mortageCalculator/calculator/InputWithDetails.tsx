@@ -28,8 +28,8 @@ export const InputWithDetails = ({
         />
       )}
       <span
-        className={`detailed__span absolute -z-10 bottom-0 font-bold slate-100 p-4 ${
-          toRight ? "right-0 rounded-r-lg" : "left-0 rounded-l-lg"
+        className={`detailed__span absolute bottom-[.5px] font-bold slate-100 p-4 ${
+          toRight ? "right-[.5px] rounded-r-lg" : "left-[.5px] rounded-l-lg"
         }`}
       >
         {detail}

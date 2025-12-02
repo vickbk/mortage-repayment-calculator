@@ -10,7 +10,7 @@ export const MortageCalculator = () => {
     undefined
   );
   return (
-    <Article>
+    <Article className="grid md:grid-cols-2 max-w-300 md:my-8 md:rounded-3xl white">
       <CalculatorForm calculateAction={calculateAction} />
       <Results results={results} />
     </Article>

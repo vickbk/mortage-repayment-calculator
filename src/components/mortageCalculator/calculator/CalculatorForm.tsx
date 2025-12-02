@@ -10,13 +10,12 @@ export const CalculatorForm = ({
 }) => {
   return (
     <form className="p-8 grid gap-8" action={calculateAction}>
-      <Heading className="text-4xl font-bold">Mortage Calculator</Heading>
-      <button
-        className="place-self-start underline decoration-dotted"
-        type="reset"
-      >
-        Clear All
-      </button>
+      <div className="flex flex-wrap gap-4 justify-between items-center">
+        <Heading className="text-4xl font-bold">Mortage Calculator</Heading>
+        <button className=" underline decoration-dotted" type="reset">
+          Clear All
+        </button>
+      </div>
       <AmountInput />
       <div className="grid gap-4">
         <InputWithDetails

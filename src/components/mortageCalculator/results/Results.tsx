@@ -1,12 +1,11 @@
 import type { ResultsType } from "../../../libs/results";
-import { Article } from "../../shared/Article";
 import { CalculatedResults } from "./CalculatedResults";
 import { EmptyResults } from "./EmptyResults";
 
 export const Results = ({ results }: { results?: ResultsType }) => {
   return (
-    <Article className="slate-900 c-white grid justify-items-center gap-8 p-8">
+    <div className="slate-900 c-white grid justify-items-center md:items-center gap-8 p-8 md:rounded-r-3xl md:rounded-bl-[8rem]">
       {!results ? <EmptyResults /> : <CalculatedResults {...results} />}
-    </Article>
+    </div>
   );
 };
