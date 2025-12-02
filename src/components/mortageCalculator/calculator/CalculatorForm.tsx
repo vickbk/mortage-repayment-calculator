@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { startTransition, useState } from "react";
 import { Heading } from "../../shared/Heading";
 import { AmountInput } from "./AmountInput";
 import { InputWithDetails } from "./InputWithDetails";
@@ -12,7 +12,10 @@ export const CalculatorForm = ({
   fields?: { term: string; rate: string; type: "interest" | "repayment" | "" };
 }) => {
   const [amount, setAmount] = useState("");
-  const resetForm = () => setAmount("");
+  const resetForm = () => {
+    setAmount("");
+    startTransition(() => calculateAction(new FormData()));
+  };
 
   return (
     <form
