@@ -13,7 +13,7 @@ export const CalculatorForm = ({
   const resetForm = () => setAmount("");
   return (
     <form
-      className="p-8 grid gap-8"
+      className="p-8 grid gap-8 lg:px-12"
       action={calculateAction}
       onReset={resetForm}
     >

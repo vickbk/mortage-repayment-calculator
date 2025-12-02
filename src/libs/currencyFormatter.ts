@@ -3,9 +3,9 @@ export const currencyFormatter = ({
   amount,
   currency = "USD",
 }: {
-  lang?: "en-US" | "de-DE";
+  lang?: string;
   amount: number;
-  currency?: "USD" | "EUR";
+  currency?: string;
 }) => {
   const formatter = new Intl.NumberFormat(lang, {
     style: "currency",
