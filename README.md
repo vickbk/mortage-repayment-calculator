@@ -65,7 +65,7 @@ Get up and running with few steps:
 - CSS custom properties
 - Mobile-first workflow
 - [SASS](https://sass-lang.com/) - CSS Preprocessor
-- [Tailwindcss](https://tailwindcss.com/) - CSS frameword
+- [Tailwindcss](https://tailwindcss.com/) - CSS framework
 - [React](https://reactjs.org/) - JS library
 - [Vite](https://vite.dev/) - A build tool for the web
 
